@@ -2,8 +2,7 @@ $('p').hide()
 
 $('#calc').click(() => {
     event.preventDefault()
-    console.log($('#inputMilhas').val())
-    const metros = 1609.34 * milhas
+    const metros = 1609.34 * $('#inputMilhas').val()
     $('#inputMetros').val(metros)
     if ($('#inputMilhas').val() === '') {
         $('p').show()
